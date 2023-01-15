@@ -26,7 +26,9 @@ def fetch(address):
     else:
         return None
 
+# define function to add columns and update coordinates
 def update_coordinates(engine, tablename):
+     
     # Set connection string and targeted table name
     # engine = create_engine(f'mysql+pymysql://root:{pwd.db_password}@localhost/dataengineer')
     # tablename = 'address'
