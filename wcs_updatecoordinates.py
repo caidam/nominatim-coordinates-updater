@@ -94,7 +94,7 @@ def update_coordinates(engine, tablename):
         
         # get list of rows that could not be updated and print number and proportion
         missing_addresses = cnn.execute(q_addresses).fetchall()
-        print(f'{len(addresses)} missing coordinate(s) out of {len(missing_addresses)} : {len(missing_addresses)/len(addresses)*100} % of the dataset.\n')
+        print(f'{len(missing_addresses)} missing coordinate(s) out of {len(addresses)} : {len(missing_addresses)/len(addresses)*100} % of the dataset.\n')
 
         # 86 missing coordinates out of 562 : 15.302491103202847 % of the dataset.
 
