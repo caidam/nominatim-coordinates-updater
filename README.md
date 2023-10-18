@@ -7,16 +7,18 @@ This script is designed to update address coordinates using the Nominatim API. I
 ## Requirements
 
 - Python 3.x
-- Packages: `pwd`, `time`, `tqdm`, `requests`, `pandas`, `sqlalchemy`
+- Packages: `time`, `tqdm`, `requests`, `pandas`, `sqlalchemy`
 
 ## Usage
 
 1. Install the required Python packages using pip:
 
    ```bash
-   pip install pwd time tqdm requests pandas sqlalchemy
+   pip install time tqdm requests pandas sqlalchemy
    ```
-2. Run the script:
+Note that the `pwd` library refers to a local `pwd.py` file storing db password as `db_password` thus it doesn't have to be installed but make sure to provide you db password following your preferred method. 
+
+3. Run the script:
 
    ```bash
    python wcs_updatecoordinates.py
